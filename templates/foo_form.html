@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Sample Web Form</title>
+	</head>
+<body>
+
+<h1>Fill Out This Form</h1>
+
+<form action="/foo" method="POST" target="_blank">
+
+	<fieldset>
+		<legend>Personal Information:</legend>
+		First Name:<br/><input type="text" name="firstname" placeholder="First Name" required>
+		<br/>
+		Last Name:<br/><input type="text" name="lastname" placeholder="Last Name" required>
+		<br/>
+		<input type="radio" name="gender" value="male" checked>Male <input type="radio" name="gender" value="female">Female <input type="radio" name="gender" value="other">Other
+		<br/>
+		Date of birth:<br/><input type="date" name="dob" min="1990-01-01" max="2018-01-01" required>
+		<br/>
+		Phone Number:<br/><input type="tel" name="telno" placeholder="+2347011111111" required>
+		<br/>
+	</fieldset><br/>
+	
+	<fieldset>
+		<legend>Site Information:</legend>
+		Email:<br/><input type="email" name="email" placeholder="samuel@gmail.com" required>
+		<br/>
+		UserName:<br/><input type="text" name="usname" required>
+		<br/>
+		User Password:<br/><input type="password" name="psw" required>
+		<br/>
+	</fieldset><br/>
+	
+	<fieldset>
+		<legend>Other Information:</legend>
+		Region:<br/><input list="region">
+					<datalist id="region">
+						<option name="region" value="SouthWest">
+						<option name="region" value="SouthEast">
+						<option name="region" value="SouthSouth">
+						<option name="region" value="NorthWest">
+						<option name="region" value="NorthEast">
+						<option name="region" value="NorthCentral">
+					</datalist>
+		<br/>
+		Quantity (between 0 and 100):<br/><input type="number" name="qty" min="0" max="100" step="10">
+		<br/><br/>
+		How did you hear about us:<br/><input type="checkbox" name="aboutus" value="friend">A Friend
+		<br/><input type="checkbox" name="aboutus" value="social media">Social Media<br/><input type="checkbox" name="aboutus" value="newsmedia">News Media<br/><br/>
+		A Greeting:<br/><input type="text" name="holla">
+		<br/><br/>
+		Select a file:<br/><input type="file" name="myfile" multiple>
+		<br/><br/>
+		<input type="submit"> <input type="reset">
+	</fieldset>
+</form>
+
+</body>
+</html>

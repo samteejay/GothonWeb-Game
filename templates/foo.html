@@ -1,0 +1,27 @@
+$def with (Firstname, Lastname, Gender, Dob, Telno, Email, Usname, Psw, Region, Qty, Aboutus, Holla, Myfile)
+<html>
+	<head>
+		<title>Gothons of Planet Percal #24</title>
+	</head>
+<body>
+
+$if Firstname or Lastname or Gender or Dob or Telno or Email or Usname or Psw or Region or Qty or Aboutus or Holla or Myfile:
+	<p style="font-size: 2em;">Your Details </p><br/>
+	<p style="color: Red; font-size: 2em;">Firstname:<em style="color: blue; font-size: 1em;"> $Firstname</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Lastname:<em style="color: blue; font-size: 1em;"> $Lastname</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Gender:<em style="color: blue; font-size: 1em;"> $Gender</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Dob:<em style="color: blue; font-size: 1em;"> $Dob</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Telno:<em style="color: blue; font-size: 1em;"> $Telno</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Email:<em style="color: blue; font-size: 1em;"> $Email</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Usname:<em style="color: blue; font-size: 1em;"> $Usname</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Region:<em style="color: blue; font-size: 1em;"> $Region</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Qty:<em style="color: blue; font-size: 1em;"> $Qty</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Aboutus:<em style="color: blue; font-size: 1em;"> $Aboutus</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Holla:<em style="color: blue; font-size: 1em;"> $Holla</em></p><br/>
+	<p style="color: Red; font-size: 2em;">Myfile:<em style="color: blue; font-size: 1em;"> $Myfile</em></p><br/>
+	
+$else:
+		<em>Hello</em> World!
+
+</body>
+</html>
